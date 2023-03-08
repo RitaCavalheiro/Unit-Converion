@@ -83,6 +83,15 @@ label svg.moon {
     transition: 0.3s;
 }
 
+body.dark-mode {
+    background: #1F2937;
+}
+
+div.dark-mode {
+    background: #273549;
+    color: #CCC1FF;
+}
+
 
 h1 {
     font-weight: 800;
