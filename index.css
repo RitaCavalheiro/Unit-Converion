@@ -5,6 +5,7 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +14,58 @@ header {
     color:  #FFFFFF;
     padding: 33px 0px;
 }
+
+#darkmode-toggle {
+    position: absolute; 
+    top: 20px; 
+    right: 60px;
+}
+
+label {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background: #CCC1FF;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label:after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: linear-gradient(180deg, #fefefe, #CCC1FF);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.toggle {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.toggle:checked + label {
+    background: #1F2937;
+}
+
+.toggle:checked + label:after {
+    left: 98px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #5A537B, #1F2937);
+}
+
+.toggle:active:after{
+    width: 260px;
+}
+
+
 
 h1 {
     font-weight: 800;
@@ -26,7 +79,9 @@ main {
     align-items: center;
     justify-content: center;
     margin: 50px;
+    transition: 0.3s;
 }
+
 
 h2 {
     font-family: 'Inter';
@@ -45,6 +100,7 @@ h2 {
     height: 108.57px;
     background: #FFFFFF;
     border-radius: 4.68077px 0px 0px 0px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 #number {

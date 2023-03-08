@@ -4,14 +4,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
-         <header>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="darkmode-toggle" class="toggle">
+                <label for="darkmode-toggle" id="darkmode-toggle">
+                    
+                </label>
+            </input>
             <h1>Metric/Imperial Unit Conversion</h1>
             <input type="number" id="number"></input>
             </br>
             <button id="convert">Convert</button>
         </header>
-        <main>
-            <div class="container">
+        <main class="main">
+            <div class="container" id="container">
                 <h2>Length (Meter/Feet)</h2>
                 <p id="length"></p>
             </div>
@@ -24,9 +31,6 @@
                 <p id="mass"></p>
             </div>
         </main>
-    </head>
-    <body>
-       
         <script src="index.js"></script>
     </body>
 </html>
