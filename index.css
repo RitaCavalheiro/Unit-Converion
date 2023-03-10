@@ -92,6 +92,9 @@ div.dark-mode {
     color: #CCC1FF;
 }
 
+div.dark-mode p {
+    color: #FFFFFF;
+}
 
 h1 {
     font-weight: 800;
@@ -118,6 +121,17 @@ h2 {
     text-align: center;
     color: #5A537B;
 }
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #353535;
+}
+
 
 .container {
     margin: 0 auto;
