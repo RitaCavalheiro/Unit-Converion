@@ -24,12 +24,12 @@ btn.addEventListener('click', function() {
     const conversionLG = number.value * 0.264172;
     const conversionGL = number.value * 0.785411784;
     const conversionKP = number.value * 2.2;
-    const conversiomPK = number.value * 0.45359237;
+    const conversionPK = number.value * 0.45359237;
     
     if(number != null) {
         length.textContent = `${number.value} meters = ${conversionMF} feet || ${number.value} feet = ${conversionFM} meters`;
         volume.textContent =  `${number.value} liters = ${conversionLG} gallons || ${number.value} gallons = ${conversionGL} liters`;
-        mass.textContent = `${number.value} kilograms = ${conversionKP} pounds || ${number.value} pounds = ${conversiomPK} kilograms`;
+        mass.textContent = `${number.value} kilograms = ${conversionKP} pounds || ${number.value} pounds = ${conversionPK} kilograms`;
     }
 })
 
@@ -37,7 +37,7 @@ btn.addEventListener('click', function() {
 // Conversion formulas
 // from meters to feet: n*3.28084
 //reverse: n*0.304
-// from leters to gallons: n*0.264172 
+// from liters to gallons: n*0.264172 
 //reverse: n*0.785411784
 // from kilograms to pounds: n*2.2
 //reverse: n*0.45359237
